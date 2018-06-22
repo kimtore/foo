@@ -3,9 +3,9 @@
 image: ambientsound/foo
 healthcheck:
   liveness:
-    path: /
+    path: /health
   readiness:
-    path: /
+    path: /health
 port: 8080
 prometheus:
   enabled: true
