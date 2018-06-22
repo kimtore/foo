@@ -4,3 +4,4 @@ healthcheck:
         path: /
     readiness:
         path: /
+port: 80
