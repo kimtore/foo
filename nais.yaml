@@ -1,1 +1,6 @@
 image: nginx
+healthcheck:
+    liveness:
+        path: /
+    readiness:
+        path: /
