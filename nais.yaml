@@ -1,7 +1,11 @@
-image: nginx
+# vi: se sts=2 ts=2 sw=2 et:
+
+image: ambientsound/foo
 healthcheck:
-    liveness:
-        path: /
-    readiness:
-        path: /
-port: 80
+  liveness:
+    path: /
+  readiness:
+    path: /
+port: 8080
+prometheus:
+  enabled: true
