@@ -8,7 +8,7 @@ healthcheck:
     path: /health
 port: 8080
 prometheus:
-  enabled: true
+  enabled: false
 alerts:
   - alert: tooManyHealthChecks
     expr: sum(rate(foo_main_health_requests[5m])) > 1.0
