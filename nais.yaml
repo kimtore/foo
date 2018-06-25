@@ -1,6 +1,7 @@
 # vi: se sts=2 ts=2 sw=2 et:
 
 image: ambientsound/foo
+team: aura
 healthcheck:
   liveness:
     path: /health
