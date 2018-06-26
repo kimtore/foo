@@ -15,6 +15,7 @@ alerts:
     expr: sum(rate(foo_main_health_requests[5m])) > 1.0
     for: 1m
     annotations:
+      alertGroup: fo@a01mmfw030.adeo.no
       action: Stop hammering me!
     labels:
       severity: nonsense
