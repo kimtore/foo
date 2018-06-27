@@ -11,11 +11,11 @@ port: 8080
 prometheus:
   enabled: true
 alerts:
-  - alert: tooManyHealthChecks
-    expr: sum(rate(foo_main_health_requests[5m])) > 1.0
-    for: 1m
+  - alert: tooHighGauge
+    expr: foo_main_gauge > 0.0
+    for: 0m
     annotations:
-      alertGroup: fo@a01mmfw030.adeo.no
+      sms: true
       action: Stop hammering me!
     labels:
       severity: nonsense
