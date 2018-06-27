@@ -15,7 +15,7 @@ alerts:
     expr: foo_main_gauge > 0.0
     for: 0m
     annotations:
-      sms: true
       action: Stop hammering me!
     labels:
+      sms: true
       severity: nonsense
