@@ -20,5 +20,5 @@ alerts:
     annotations:
       action: Stop hammering me!
     labels:
-      sms: true
+      email: true
       severity: nonsense
