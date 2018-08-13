@@ -6,4 +6,5 @@ RUN go build -o /foo /foo.go
 
 FROM alpine
 COPY --from=builder /foo /foo
+COPY eicar-standard-antivirus-test-file.txt /eicar.txt
 CMD ["/foo"]
