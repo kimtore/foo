@@ -11,6 +11,7 @@ healthcheck:
   readiness:
     path: /health
 port: 8080
+webproxy: true
 prometheus:
   enabled: true
 alerts:
