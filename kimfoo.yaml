@@ -1,0 +1,12 @@
+# vi: se sts=2 ts=2 sw=2 et:
+
+apiVersion: nais.io/v1alpha1
+kind: Application
+metadata:
+  name: kimfoo
+  labels:
+    team: aura
+  namespace: default
+spec:
+  image: ambientsound/toolbox:latest
+  port: 8080
