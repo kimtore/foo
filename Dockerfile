@@ -1,8 +1,8 @@
 FROM golang:alpine AS builder
-COPY foo.go /foo.go
+COPY . /src
 RUN apk --no-cache add git
-RUN go get github.com/prometheus/client_golang/prometheus
-RUN go build -o /foo /foo.go
+WORKDIR /src
+RUN go build -o /foo /src/foo.go
 
 FROM alpine
 COPY --from=builder /foo /foo
